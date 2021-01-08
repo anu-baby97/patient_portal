@@ -115,6 +115,7 @@ class _MyAppState extends State<MyApp> {
                                   fontSize: 15, fontFamily: "Poppins-Medium"))
                         ],
                       ),
+                      SizedBox(height: 20),
                       InkWell(
                         child: Container(
                           width: ScreenUtil.getInstance().setWidth(330),

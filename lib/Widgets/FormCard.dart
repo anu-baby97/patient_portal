@@ -34,7 +34,7 @@ class _FormCardState extends State<FormCard> {
             children: <Widget>[
               Text("Login",
                   style: TextStyle(
-                      fontSize: ScreenUtil.getInstance().setSp(55),
+                      fontSize: ScreenUtil.getInstance().setSp(65),
                       fontFamily: "Poppins-Bold",
                       letterSpacing: .6)),
               SizedBox(
@@ -43,7 +43,7 @@ class _FormCardState extends State<FormCard> {
               Text("Username",
                   style: TextStyle(
                       fontFamily: "Poppins-Medium",
-                      fontSize: ScreenUtil.getInstance().setSp(35))),
+                      fontSize: ScreenUtil.getInstance().setSp(45))),
               TextField(
                 decoration: InputDecoration(
                     hintText: "username",
@@ -55,7 +55,7 @@ class _FormCardState extends State<FormCard> {
               Text("Password",
                   style: TextStyle(
                       fontFamily: "Poppins-Medium",
-                      fontSize: ScreenUtil.getInstance().setSp(35))),
+                      fontSize: ScreenUtil.getInstance().setSp(45))),
               TextField(
                 obscureText: true,
                 decoration: InputDecoration(
