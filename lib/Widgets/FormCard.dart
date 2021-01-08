@@ -16,7 +16,7 @@ class _FormCardState extends State<FormCard> {
         padding: EdgeInsets.only(bottom: 1),
         decoration: BoxDecoration(
             color: Colors.white,
-            borderRadius: BorderRadius.circular(8.0),
+            borderRadius: BorderRadius.circular(10.0),
             boxShadow: [
               BoxShadow(
                   color: Colors.black12,

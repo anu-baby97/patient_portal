@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:patient_portal/Widgets/PatientOrClinic.dart';
 import 'Widgets/FormCard.dart';
-//import 'Widgets/ForgotPassword.dart';
 
 void main() => runApp(MaterialApp(
       home: MyApp(),
@@ -174,7 +174,14 @@ class _MyAppState extends State<MyApp> {
                         style: TextStyle(fontFamily: "Poppins-Medium"),
                       ),
                       InkWell(
-                        onTap: () {},
+                        onTap: () {
+                          setState(() {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => PatientOrClinic()));
+                          });
+                        },
                         child: Text("Sign Up",
                             style: TextStyle(
                                 color: Color(0xFF5d74e3),
