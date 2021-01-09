@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:patient_portal/Patient_Signup.dart';
 
 class PatientOrClinic extends StatefulWidget {
   @override
@@ -50,7 +51,15 @@ class _PatientOrClinicState extends State<PatientOrClinic> {
                           child: Material(
                             color: Colors.transparent,
                             child: InkWell(
-                              onTap: () {},
+                              onTap: () {
+                                setState(() {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) =>
+                                              PatientSignup()));
+                                });
+                              },
                               child: Center(
                                 child: Text(
                                   "I'm here to register as a patient",
