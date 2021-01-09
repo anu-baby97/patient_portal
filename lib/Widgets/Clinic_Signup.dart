@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class PatientSignup extends StatefulWidget {
+class ClinicSignup extends StatefulWidget {
   @override
-  _PatientSignupState createState() => _PatientSignupState();
+  _ClinicSignupState createState() => _ClinicSignupState();
 }
 
-class _PatientSignupState extends State<PatientSignup> {
+class _ClinicSignupState extends State<ClinicSignup> {
   @override
   Widget build(BuildContext context) {
     return Material(
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.blue.shade700,
-          title: Text('Patient Signup Page'),
+          title: Text('Clinic Signup Page'),
         ),
         body: SingleChildScrollView(
           child: Container(
@@ -34,7 +34,7 @@ class _PatientSignupState extends State<PatientSignup> {
                     padding: EdgeInsets.fromLTRB(10, 0, 80, 10),
                     child: TextField(
                       decoration: InputDecoration(
-                          hintText: "Enter Name",
+                          hintText: "Enter Clinic/Hospital Name",
                           hintStyle:
                               TextStyle(color: Colors.grey, fontSize: 15.0)),
                     ),
@@ -45,7 +45,7 @@ class _PatientSignupState extends State<PatientSignup> {
                     padding: EdgeInsets.fromLTRB(10, 0, 80, 10),
                     child: TextField(
                       decoration: InputDecoration(
-                          hintText: "Enter Email",
+                          hintText: "Enter Username",
                           hintStyle:
                               TextStyle(color: Colors.grey, fontSize: 15.0)),
                     ),
@@ -56,7 +56,7 @@ class _PatientSignupState extends State<PatientSignup> {
                     padding: EdgeInsets.fromLTRB(10, 0, 80, 10),
                     child: TextField(
                       decoration: InputDecoration(
-                          hintText: "Enter DOB",
+                          hintText: "Enter Password",
                           hintStyle:
                               TextStyle(color: Colors.grey, fontSize: 15.0)),
                     ),
@@ -67,7 +67,7 @@ class _PatientSignupState extends State<PatientSignup> {
                     padding: EdgeInsets.fromLTRB(10, 0, 80, 10),
                     child: TextField(
                       decoration: InputDecoration(
-                          hintText: "Enter Phone Number",
+                          hintText: "Re-enter Password",
                           hintStyle:
                               TextStyle(color: Colors.grey, fontSize: 15.0)),
                     ),
@@ -78,7 +78,7 @@ class _PatientSignupState extends State<PatientSignup> {
                     padding: EdgeInsets.fromLTRB(10, 0, 80, 10),
                     child: TextField(
                       decoration: InputDecoration(
-                          hintText: "Enter Gender",
+                          hintText: "Enter Contact Number",
                           hintStyle:
                               TextStyle(color: Colors.grey, fontSize: 15.0)),
                     ),
