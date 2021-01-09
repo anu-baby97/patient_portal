@@ -44,6 +44,7 @@ class _PatientSignupState extends State<PatientSignup> {
                   child: Padding(
                     padding: EdgeInsets.fromLTRB(10, 0, 80, 10),
                     child: TextField(
+                      keyboardType: TextInputType.emailAddress,
                       decoration: InputDecoration(
                           hintText: "Enter Email",
                           hintStyle:
@@ -55,6 +56,7 @@ class _PatientSignupState extends State<PatientSignup> {
                   child: Padding(
                     padding: EdgeInsets.fromLTRB(10, 0, 80, 10),
                     child: TextField(
+                      keyboardType: TextInputType.datetime,
                       decoration: InputDecoration(
                           hintText: "Enter DOB",
                           hintStyle:
@@ -66,6 +68,7 @@ class _PatientSignupState extends State<PatientSignup> {
                   child: Padding(
                     padding: EdgeInsets.fromLTRB(10, 0, 80, 10),
                     child: TextField(
+                      keyboardType: TextInputType.number,
                       decoration: InputDecoration(
                           hintText: "Enter Phone Number",
                           hintStyle:

@@ -77,6 +77,7 @@ class _ClinicSignupState extends State<ClinicSignup> {
                   child: Padding(
                     padding: EdgeInsets.fromLTRB(10, 0, 80, 10),
                     child: TextField(
+                      keyboardType: TextInputType.number,
                       decoration: InputDecoration(
                           hintText: "Enter Contact Number",
                           hintStyle:
@@ -99,35 +100,43 @@ class _ClinicSignupState extends State<ClinicSignup> {
                   child: Padding(
                     padding: EdgeInsets.fromLTRB(10, 0, 80, 10),
                     child: TextField(
+                      keyboardType: TextInputType.number,
                       decoration: InputDecoration(
-                          hintText: "Enter Username",
+                          hintText: "Maximum Capacity",
                           hintStyle:
                               TextStyle(color: Colors.grey, fontSize: 15.0)),
                     ),
                   ),
                 ),
                 Flexible(
-                  child: Padding(
-                    padding: EdgeInsets.fromLTRB(10, 0, 80, 10),
-                    child: TextField(
-                      decoration: InputDecoration(
-                          hintText: "Enter Password",
-                          hintStyle:
-                              TextStyle(color: Colors.grey, fontSize: 15.0)),
-                    ),
-                  ),
-                ),
-                Flexible(
-                  child: Padding(
-                    padding: EdgeInsets.fromLTRB(10, 0, 80, 10),
-                    child: TextField(
-                      decoration: InputDecoration(
-                        hintText: "Re-enter Password",
-                        hintStyle:
-                            TextStyle(color: Colors.grey, fontSize: 15.0),
-                        //contentPadding: EdgeInsets.all(10)
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10),
+                        child: Text("Types of Testing: ",
+                            style: TextStyle(
+                                fontFamily: "Poppins-Medium",
+                                fontSize: ScreenUtil.getInstance().setSp(45))),
                       ),
-                    ),
+                    ],
+                  ),
+                ),
+                Flexible(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10),
+                        child: Text("Home Checkup Availability: ",
+                            style: TextStyle(
+                                fontFamily: "Poppins-Medium",
+                                fontSize: ScreenUtil.getInstance().setSp(45))),
+                      ),
+                      /*Padding(
+                        padding: EdgeInsets.fromLTRB(10, 0, 80, 10),
+                      ),*/
+                    ],
                   ),
                 ),
                 SizedBox(
